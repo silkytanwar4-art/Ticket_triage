@@ -1,0 +1,33 @@
+name: Validate JSON
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check JSON is valid
+        run: |
+          python -c "
+          import json, glob, sys
+
+          json_files = glob.glob('**/*.json', recursive=True)
+
+          if not json_files:
+              print('No JSON files found')
+              sys.exit(1)
+
+          for f in json_files:
+              try:
+                  json.load(open(f))
+                  print(f'✅ {f} is valid')
+              except json.JSONDecodeError as e:
+                  print(f'❌ {f} is invalid: {e}')
+                  sys.exit(1)
+          "
