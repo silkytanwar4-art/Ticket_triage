@@ -19,6 +19,12 @@ No manual effort. One click runs the entire pipeline.
 
 ---
 
+## 🎬 Workflow Demo
+
+https://github.com/silkytanwar4-art/Ticket_triage/releases/download/v1.0/Ticket_triage.mp4
+
+---
+
 ## 🔄 Pipeline Flow
 
 ```
