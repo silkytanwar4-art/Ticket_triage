@@ -1,0 +1,96 @@
+# ========================
+# SECRETS & CREDENTIALS
+# ========================
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+*.pem
+*.key
+*.cert
+secrets.json
+credentials.json
+config.secret.*
+
+# ========================
+# PYTHON
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+.mypy_cache/
+
+# ========================
+# NODE / JAVASCRIPT
+# ========================
+node_modules/
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+package-lock.json
+.npm/
+.yarn/
+
+# ========================
+# DATABASES
+# ========================
+*.sqlite
+*.sqlite3
+*.db
+dump.rdb
+
+# ========================
+# LOGS
+# ========================
+*.log
+logs/
+*.out
+*.err
+
+# ========================
+# OS FILES
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ========================
+# EDITORS & IDEs
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.cursor/
+
+# ========================
+# DOCKER
+# ========================
+.docker/
+docker-compose.override.yml
+
+# ========================
+# TEMP & MISC
+# ========================
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+*.zip
+*.tar.gz
+*.rar
